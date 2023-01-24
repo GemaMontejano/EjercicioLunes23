@@ -9,8 +9,8 @@ const alumnos = [
     { name: 'Luis', edad: 22, nota: 3, aprobado: false },
 ]
 
-const aprobados = alumnos.filter(elemento => elemento.aprobado)
-const superior = alumnos.filter(elemento => elemento.nota >=7)
+const aprobados = alumnos.filter(elemento => elemento.aprobado);
+const superior = alumnos.filter(elemento => elemento.nota >= 7);
 
-console.log('Aprobados',aprobados)
-console.log('Nota Superior a 7', superior)
+console.log('Aprobados', aprobados);
+console.log('Nota Superior a 7', superior);
