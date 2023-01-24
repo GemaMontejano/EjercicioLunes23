@@ -1,0 +1,7 @@
+//- Realizaremos una copia del array incrementando en 1 punto las notas de cada uno
+
+function sumar1({ nota }) {
+    return `${nota + 1}`
+}
+const incremento = alumnos.map(sumar1)
+console.log(incremento)
