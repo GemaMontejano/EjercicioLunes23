@@ -1,0 +1,18 @@
+//Crearemos un algoritmo que pida al usuario un nombre, en caso de existir en nuestro array de alumnos, imprimiremos los datos oportunos, en caso de no existir mostramos un mensaje por pantalla.
+const alumnos = [
+    { name: 'David', edad: 22, nota: 7, aprobado: true },
+    { name: 'Alicia', edad: 18, nota: 4, aprobado: false },
+    { name: 'Pedro', edad: 22, nota: 6, aprobado: true },
+    { name: 'Jorge', edad: 22, nota: 3, aprobado: false },
+    { name: 'Marina', edad: 22, nota: 5, aprobado: true },
+    { name: 'Rocio', edad: 22, nota: 8, aprobado: true },
+    { name: 'Luis', edad: 22, nota: 3, aprobado: false },
+]
+let nombre = prompt("¿Cuál es tu nombre?")
+const lista = alumnos.find(elemento => elemento.name === nombre)
+if (lista){
+    console.log(lista)
+}
+else {
+    console.log("No es un alumno")
+}
