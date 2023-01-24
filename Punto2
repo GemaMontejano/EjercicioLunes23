@@ -7,12 +7,7 @@ const alumnos = [
     { name: 'Marina', edad: 22, nota: 5, aprobado: true },
     { name: 'Rocio', edad: 22, nota: 8, aprobado: true },
     { name: 'Luis', edad: 22, nota: 3, aprobado: false },
-]
-let nombre = prompt("¿Cuál es tu nombre?")
-const lista = alumnos.find(elemento => elemento.name === nombre)
-if (lista){
-    console.log(lista)
-}
-else {
-    console.log("No es un alumno")
-}
+];
+let nombre = prompt("¿Cuál es tu nombre?");
+const lista = alumnos.find(elemento => elemento.name === nombre);
+lista ? console.log(lista) : console.log("No es un alumno");
