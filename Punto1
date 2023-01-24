@@ -1,0 +1,40 @@
+/* Deberemos recorrer el array e imprimir por pantalla, nota más alta de clase, la más baja, media de la clase, 
+número de aprobados y número de suspensos.*/
+const alumnos = [
+    { name: 'David', edad: 22, nota: 7, aprobado: true },
+    { name: 'Alicia', edad: 18, nota: 4, aprobado: false },
+    { name: 'Pedro', edad: 22, nota: 6, aprobado: true },
+    { name: 'Jorge', edad: 22, nota: 3, aprobado: false },
+    { name: 'Marina', edad: 22, nota: 5, aprobado: true },
+    { name: 'Rocio', edad: 22, nota: 8, aprobado: true },
+    { name: 'Luis', edad: 22, nota: 3, aprobado: false },
+];
+
+
+let nota = alumnos[0].nota;
+let notaBaja = alumnos[0].nota;
+let notaAlta = 0;
+let aprobados = 0;
+let suspensos = 0;
+alumnos.forEach(alumno => {
+    if (alumno.nota > notaAlta) {
+        notaAlta = alumno.nota
+    };
+    if (alumno.nota < notaBaja) {
+        notaBaja = alumno.nota
+    };
+    if (alumno.aprobado) {
+        aprobados++;
+    }
+    else {
+        suspensos++
+    }
+    nota += alumno.nota;
+
+})
+const media = nota / alumnos.length;
+console.log(notaAlta);
+console.log(notaBaja);
+console.log(media);
+console.log(aprobados);
+console.log(suspensos);
