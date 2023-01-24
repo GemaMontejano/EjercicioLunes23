@@ -1,0 +1,16 @@
+// Volcar en un array todos los alumnos aprobados y en otro todos aquellos que tenga una nota superior o igual a 7.
+const alumnos = [
+    { name: 'David', edad: 22, nota: 7, aprobado: true },
+    { name: 'Alicia', edad: 18, nota: 4, aprobado: false },
+    { name: 'Pedro', edad: 22, nota: 6, aprobado: true },
+    { name: 'Jorge', edad: 22, nota: 3, aprobado: false },
+    { name: 'Marina', edad: 22, nota: 5, aprobado: true },
+    { name: 'Rocio', edad: 22, nota: 8, aprobado: true },
+    { name: 'Luis', edad: 22, nota: 3, aprobado: false },
+]
+
+const aprobados = alumnos.filter(elemento => elemento.aprobado)
+const superior = alumnos.filter(elemento => elemento.nota >=7)
+
+console.log('Aprobados',aprobados)
+console.log('Nota Superior a 7', superior)
